@@ -1,3 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using BookLib;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main()
+    {
+        Book.AddBook("Война и мир", "Л. Толстой", 1869, 3);
+        Book.AddBook("Преступление и наказание", "Ф. Достоевский", 1866, 5);
+
+        Book.ShowBooks();
+    }
+}
